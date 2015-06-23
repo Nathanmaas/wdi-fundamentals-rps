@@ -1,6 +1,3 @@
-////////////////////////////////////////////////
-/*   Provided Code - Please Don't Edit   */
-////////////////////////////////////////////////
 'use strict';
 
 function getInput() {
@@ -41,18 +38,23 @@ function getWinner(playerMove,computerMove) {
 
     if (playerMove === computerMove) {
         winner = 'tie';
-        return 'Tied Game!';
+        console.log("Tied Game!");
+        return winner;
     }else if (playerMove = 'rock' &&& computerMove = 'scissors'); {
         winner = 'player';
-        return 'You Won';
+        console.log("You win");
+        return winner;
     }else if (playerMove = 'paper' &&& computerMove = 'rock'); {
         winner = 'player';
-        return 'You Won';
+        console.log("You Win")
+        return winner;
     }else if (playerMove = 'scissors' &&& computerMove = 'paper'); {
         winner = 'player';
-        return 'You Won';
+        console.log("You win")
+        return winner;
     }else {
-        return 'Computer Wins';
+        console.log ("You Lose");
+        return winner;
     }
 }
 
